@@ -1,1 +1,3 @@
-# elearningproject
+- Clone this project
+- run : flutter packages get
+- run : flutter run
