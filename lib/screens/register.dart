@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  static String routeName = "/home";
+class Register extends StatelessWidget {
+  static String routeName = "/register";
 
-  const Home({super.key});
+  const Register({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Home page"),
+        title: const Text("Register page"),
       ),
       body: const Center(
         child: Text("This is the new screen!"),
