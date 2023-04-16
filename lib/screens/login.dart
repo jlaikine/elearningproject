@@ -79,38 +79,37 @@ class Login extends StatelessWidget {
               ),
             ),
           ),
-          Expanded(
-            child: Container(
-              padding: const EdgeInsets.only(bottom: 16.0),
-              child: Align(
-                alignment: Alignment.bottomCenter,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Text(
-                      'Pas encore de compte ? ',
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => const Register()),
-                        );
-                      },
-                      child: const Text(
-                        'S\'inscrire',
-                        style: TextStyle(
-                          decoration: TextDecoration.underline,
-                          color: Colors.purple,
-                        ),
-                      ),
-                    ),
-                  ],
+        ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.white,
+        child: Container(
+          height: 60,
+          padding: const EdgeInsets.only(bottom: 16.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Pas encore de compte ? ',
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Register()),
+                  );
+                },
+                child: const Text(
+                  'S\'inscrire',
+                  style: TextStyle(
+                    decoration: TextDecoration.underline,
+                    color: Colors.purple,
+                  ),
                 ),
               ),
-            ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }

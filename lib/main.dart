@@ -3,7 +3,7 @@ import 'package:elearningproject/routes.dart';
 import 'package:elearningproject/screens/login.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
